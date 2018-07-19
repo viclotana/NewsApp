@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/viclotana/NewsApp/issues"
   },
-  "homepage": "https://github.com/viclotana/NewsApp#readme"
+  "homepage": "https://github.com/viclotana/NewsApp#readme",
+  "dependencies": {
+    "workbox-sw": "^3.4.1"
+  }
 }
