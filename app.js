@@ -8,7 +8,7 @@ window.addEventListener('load', async e => {
     await updateSources();
     sourceSelector.value = defaultSource;
 
-    sourceSelector.addEventListener('change', e => )
+    //sourceSelector.addEventListener('change', e => )
 });
 
 async function updateSources (){
@@ -21,7 +21,7 @@ async function updateSources (){
 }
 
 async function updateNews() {
-    const res = await fetch(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`);
+    const res = await fetch(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`);
     const json = await res.json();
 
     main.innerHTML = json.articles.map(createArticle).join('\n');
