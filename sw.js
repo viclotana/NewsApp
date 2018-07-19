@@ -1,3 +1,4 @@
+importScripts('./node_modules/workbox-sw/build/workbox-sw.js')
 //cache all ststic assets
 const staticAssets = [
   '/',
