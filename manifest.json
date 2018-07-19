@@ -37,8 +37,8 @@
             "type": "image/png"
         },
         {
-            "src":"icons/T72.png",
-            "sizes": "72x72",
+            "src":"icons/T512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
