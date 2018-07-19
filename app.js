@@ -8,7 +8,9 @@ window.addEventListener('load', async e => {
     await updateSources();
     sourceSelector.value = defaultSource;
 
-    //sourceSelector.addEventListener('change', e => )
+    sourceSelector.addEventListener('change', e => {
+      updateNews(e.target.value);
+    });
 });
 
 async function updateSources (){
