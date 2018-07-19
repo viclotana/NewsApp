@@ -20,7 +20,7 @@ async function updateSources (){
   .join('\n');
 }
 
-async function updateNews() {
+async function updateNews(source = defaultSource) {
     const res = await fetch(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`);
     const json = await res.json();
 
