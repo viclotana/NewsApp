@@ -1,5 +1,14 @@
-self.addEventListener('install', e => {
-    console.log(`install`);
+//cache all ststic assets
+const staticAssets = [
+  '/',
+  './main.css',
+  './app.js'
+];
+
+self.addEventListener('install', async e => {
+    //console.log(`install`);
+    const cache = await caches.open('news-static');
+    cache.addAll(staticAssets);
 });
 
 self.addEventListener('fetch', e => {
